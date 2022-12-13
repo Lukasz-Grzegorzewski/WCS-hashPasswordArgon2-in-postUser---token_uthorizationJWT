@@ -1,0 +1,29 @@
+{
+  "name": "wcs-exercise_mysql2-expressjs-post_methode-movies-users-routes",
+  "version": "1.0.0",
+  "description": "POST method_MySQL DB Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lukasz-Grzegorzewski/WCS-exercise_mysql2-ExpressJs-POST_Methode-movies-users-routes.git"
+  },
+  "author": "Lukasz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lukasz-Grzegorzewski/WCS-exercise_mysql2-ExpressJs-POST_Methode-movies-users-routes/issues"
+  },
+  "homepage": "https://github.com/Lukasz-Grzegorzewski/WCS-exercise_mysql2-ExpressJs-POST_Methode-movies-users-routes#readme",
+  "dependencies": {
+    "argon2": "^0.30.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^6.14.2",
+    "mysql2": "^3.0.0-rc.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
