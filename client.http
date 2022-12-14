@@ -1,0 +1,77 @@
+GET http://localhost:5005/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjExLCJpYXQiOjE2NzEwMDYyMDQsImV4cCI6MTY3MTAwOTgwNH0.sQkXs9SUOQXPbUDGwEO0dSOBr43PKEH-nwfyX9_bsHk
+
+###
+
+GET http://localhost:5005/api/movies
+
+###
+
+GET http://localhost:5005/api/users/11
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjExLCJpYXQiOjE2NzEwMDYyMDQsImV4cCI6MTY3MTAwOTgwNH0.sQkXs9SUOQXPbUDGwEO0dSOBr43PKEH-nwfyX9_bsHk
+
+###
+
+GET http://localhost:5005/api/users&language=english
+
+###
+
+DELETE http://localhost:5005/api/users/7
+
+###
+
+POST http://localhost:5005/api/users
+Content-Type: application/json
+
+{
+    "firstname": "Lukas test",
+    "lastname": "Koala test",
+    "email": "luk@luk2.com",
+    "city": "Nantes",
+    "language": "NodeJS",
+    "password": "123"
+}
+
+###
+
+POST http://localhost:5005/api/login
+Content-Type: application/json
+
+{
+    "email": "luk@luk2.com",
+    "password": "123"
+}
+
+###
+
+POST http://localhost:5005/api/movies
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjExLCJpYXQiOjE2NzEwMDYyMDQsImV4cCI6MTY3MTAwOTgwNH0.sQkXs9SUOQXPbUDGwEO0dSOBr43PKEH-nwfyX9_bsHk
+Content-Type: application/json
+
+{
+  "title": "Test2",
+  "director": "Test2 director",
+  "year": "Test2 year",
+  "color": "Test2 color",
+  "duration": 120
+}
+
+###
+
+DELETE http://localhost:5005/api/users/10
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjExLCJpYXQiOjE2NzEwMDYyMDQsImV4cCI6MTY3MTAwOTgwNH0.sQkXs9SUOQXPbUDGwEO0dSOBr43PKEH-nwfyX9_bsHk
+
+###
+
+PUT http://localhost:5005/api/users/11
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjExLCJpYXQiOjE2NzEwMDY0MjksImV4cCI6MTY3MTAxMDAyOX0.a_8efkerd57sVzOsxKqbrcyqhhwrCSaMINm8vwNSoRM
+Content-Type: application/json
+
+{
+    "firstname": "Lukas update",
+    "lastname": "Koala update",
+    "email": "lukupdate@luk2.com",
+    "city": "Nantes update",
+    "language": "NodeJS update",
+    "password": "123"
+}
